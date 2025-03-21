@@ -2,30 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "qr-generator/package.json",
+      "src": "package.json",
       "use": "@vercel/next"
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/anwhubxyz/genqr/(.*)",
-      "destination": "/$1"
-    },
-   
-    {
-      "source": "/anwhubxyz/genqr/(.*)",
-      "destination": "/$1"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)\\.(css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|otf|eot)$",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
+      "src": "/qrgen/(.*)",
+      "dest": "/$1"
     }
   ]
 }
