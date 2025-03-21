@@ -8,7 +8,7 @@
   ],
   "routes": [
     {
-      "src": "/qrgen/(.*)",
+      "src": "/genqr/(.*)",
       "dest": "/$1"
     }
   ]
