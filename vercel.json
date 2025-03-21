@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "package.json",
+      "src": "genqr/package.json",
       "use": "@vercel/next"
     }
   ],
   "routes": [
     {
       "src": "/genqr/(.*)",
-      "dest": "/$1"
+      "dest": "/genqr/$1"
     }
   ]
 }
