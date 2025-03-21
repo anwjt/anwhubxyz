@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "projects": {
+    "qr-generator": {
+      "rootDirectory": "apps/qr-generator",
+      "buildCommand": "npm run build",
+      "outputDirectory": ".next",
+      "routes": [
+        {
+          "src": "/qr-generator/(.*)",
+          "dest": "/qr-generator/$1"
+        }
+      ]
+    }
+  }
+}
